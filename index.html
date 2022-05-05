@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes1</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        
+        <img class="imglogo" src="imagenes/Logo.png" alt="logo de alura">
+        <h1 class="title">Encriptador de mensajes</h1>
+    </header>
+
+    <main class="container">
+        <section class="left">
+            <textarea class="mensaje-input"  cols="30" rows="10" placeholder="Ingrese aqui su mensaje"></textarea>
+            <div class="botoneras">
+                <p>*Solo letras minusculas y sin acentos</p>
+                <input class="btn-encriptar" type="button" onclick="btnencriptar()" value="Encriptar">
+                <input class="btn-desencriptar" type="button" onclick="btndesencriptar()" value="Desencriptar">    
+            </div>
+        </section><s></s>
+    
+        <section class="right">
+            <img class="imglupa" id="imgder" src="imagenes/Muñeco.png" alt="lupaimg">
+            <h3 class="tituloder">Ningun mensaje fue encontrado</h3> 
+            <textarea id="texto-derecho" class="mensaje-lupa" cols="30" rows="3" placeholder="Ingresa el mensaje que deseas encriptar o desencriptar"></textarea>  
+            <input class="btncopiar" type="button" onclick="copyToClipBoard()" value="Copiar">  
+        </section>
+    </main>
+
+    <footer>
+        <p>Facundo De los Rios - 1º Challenge ALURA</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/facundo-delosrios">facundo-delosrios</a></p>
+        <p>GitHub: <a href="https://github.com/FacundoDLR">@FacundoDLR</a></p>
+        <p>Año 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
